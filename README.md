@@ -1,7 +1,7 @@
 zig-fuzzing-example
 ===================
 
-A full example project demonstrating the methods for fuzzing [Zig](https://ziglang.org/) code detailed in [the blog post 'Fuzzing Zig Code with AFL++'](https://www.ryanliptak.com/blog/fuzzing-zig-code/).
+A simple example project demonstrating the methods for fuzzing [Zig](https://ziglang.org/) code detailed in the blog post ['Fuzzing Zig Code with AFL++'](https://www.ryanliptak.com/blog/fuzzing-zig-code/).
 
 Requires [`afl++`](https://github.com/AFLplusplus/AFLplusplus) with `afl-clang-lto` to be installed.
 
