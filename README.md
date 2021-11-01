@@ -24,10 +24,10 @@ You should quickly see results like:
 total execs : 44.4k │ total crashes : 4279 (2 unique)
 ```
 
-Once the crashes are found, full stack traces can be gotten with the `fuzz-debug` executable:
+Once the crashes are found, full stack traces can be gotten with the `fuzz-debug` executable (your crash will likely be named differently):
 
 ```sh
-$ cat 'test/output/default/crashes/id:000000,sig:06,src:000000,time:2,op:havoc,rep:8' | ./zig-out/bin/fuzz-debug
+$ ./zig-out/bin/fuzz-debug < 'test/output/default/crashes/id:000000,sig:06,src:000000,time:2,op:havoc,rep:8'
 error(gpa): memory address 0x7ffff7ff8000 leaked: 
 /home/ryan/Programming/zig/zig-fuzzing-example/src/example.zig:10:36: 0x207e80 in .example.parse (fuzz-debug)
             _ = try allocator.alloc(u8, 10);
